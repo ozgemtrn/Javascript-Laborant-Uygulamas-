@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div600{
+            width: 150px;
+            height: 60px;
+            background-color:red;
+            border-bottom-right-radius: 25px;
+        }
+        #body6{
+            background-color: greenyellow;
+        }
+        #text{
+            font-size: 5em;
+            letter-spacing: 1px;
+            font-family: monospace;
+            width: 700px;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: 
+                typing 5s steps(20),
+                cursor .2s step-end infinite alternate ;
+        }
+        @keyframes typing{
+            from {width: 0;}
+        }
+
+    </style>
+</head>
+<body id="body6">
+    <div id="div600"></div>
+    <h2>Laborant Sağlık Sistemi hasta rapor ve tahlil sonucu erişim sayfasına hoşgeldiniz</h2>
+    <button id="btn6">Verileri Güncelle</button>
+    <p id="text">LABORANT SAĞLIK</p>
+    <button id="tikla6" onclick="belge6()">BELGE OLUŞTUR</button>
+
+    <script>
+        document.write("<h3>Hastanın tahlil bilgileri aşağıdaki gibidir: </h3><br><br>");
+        document.write("<h3>ORTASTATİK HİPOTANSİYON</h3>Ortostatik hipotansiyonun en sık görülen semptomu, oturduktan veya uzandıktan sonra ayağa kalkıldığında baş dönmesi veya baş dönmesidir.Kan basıncının aniden düşmesidir.Postural hipotansiyon olarak da bilinir.Ayakta dururken baş dönmesi,bulanık görüş,zayıflık,baş dönmesi gibi belirtileri vardır");
+        document.write("6 Numarada yer alan hastanın ettiği şikayetlerdeki belirtiler sonucunda ortastatik hipotansiyonu olduğu teşhisi konmuştur.\n");
+        document.write("<h4>Hastanın laborantı=>Mehmet Ali Güngören</h4>");
+
+
+var tarih12=new Date().toLocaleString('tr-TR')
+document.getElementById("div600").innerHTML="<h9>TARİH</h9>: "+tarih12;
+
+document.write("\nRaporun verildiği tarih: " +tarih12);
+
+function saat3(){
+var tarih13=new Date().toLocaleString('tr-TR')
+document.getElementById("div600").innerHTML="<h9>TARİH</h9>: "+tarih13;
+}
+setInterval(saat3,1000);
+
+
+var guncelle6;
+document.getElementById("btn6").addEventListener("click",function(){
+    guncelle6=prompt("Analiz ve Verileri Güncellemek için Metin Ekleyin");
+    document.getElementById("body6").innerHTML=guncelle6;
+})
+
+function belge6(){
+    var blg6=window.confirm("Belge Oluşturmak İstediğinize Emin misiniz?");
+    if(blg6){
+        window.print();
+    }
+    else{
+        window.alert("BELGE OLUŞTURULMADI");
+    }
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div200{
+            width: 150px;
+            height: 60px;
+            background-color:red;
+            border-bottom-right-radius: 25px;
+        }
+        #body2{
+            background-color: greenyellow;
+        }
+        
+        #text{
+            font-size: 5em;
+            letter-spacing: 1px;
+            font-family: monospace;
+            width: 700px;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: 
+                typing 5s steps(20),
+                cursor .2s step-end infinite alternate ;
+        }
+        @keyframes typing{
+            from {width: 0;}
+        }
+    </style>
+</head>
+<body id="body2">
+    <div id="div200"></div>
+    <h2>Laborant Sağlık Sistemi hasta rapor ve tahlil sonucu erişim sayfasına hoşgeldiniz</h2>
+    <button id="btn2">Verileri Güncelle</button>
+    <p id="text">LABORANT SAĞLIK</p>
+    <button id="tikla2" onclick="belge2()">BELGE OLUŞTUR</button>
+
+    <script>
+        document.write("<h3>Hastanın tahlil bilgileri aşağıdaki gibidir: </h3><br><br>");
+        document.write("<h4>TİP 2 HASTANIN HASTALIĞININ TANIMI</h4>Tip 2 diyabet, pankreasın daha az insülin üretmesi ve hücrelerin insüline direnç göstermesi sonucu vücudun glukozu metabolize edememesi ile sonuçlanır, bu da kandaki şeker seviyesinin (glukoz) çok yükselmesine bağlı olarak ortaya çıkan ve ömür boyu tedavi gerektiren bir hastalıktır. En sık görülen diyabet türü olan tip 2 diyabet, insülin direnci olarak tanımlanan yüksek kan şekeri seviyeleri olarak bilinir. Tip 2 diyabete karşı kilo vermek, sağlıklı beslenme ve egzersiz yapmak hastalığın yönetimini kolaylaştırmada etkili olur. Yapılan diyet ya da egzersiz kan şekerinin kontrolünde yeterli değilse diyabet ilaçları ya da insülin tedavisi önerilebilir.TİP 2 DİYABET BELİRTİLERİ NELERDİR?")
+        document.write("<h4>NOT= 2 numarada yer alan hasta yukarıda özellikleri verilen TİP 2 Diyabet hastalığına sahiptir</h4>\n");
+        document.write("<h4>Hastanın laborantı=>Hüseyin Karaçam</h4>")
+
+
+var tarih4=new Date().toLocaleString('tr-TR')
+document.getElementById("div200").innerHTML="<h9>TARİH</h9>: "+tarih4;
+
+document.write("\nRaporun verildiği tarih: " +tarih4);
+
+function saat3(){
+var tarih5=new Date().toLocaleString('tr-TR')
+document.getElementById("div200").innerHTML="<h9>TARİH</h9>: "+tarih5;
+}
+setInterval(saat3,1000);
+
+
+var guncelle2;
+document.getElementById("btn2").addEventListener("click",function(){
+    guncelle2=prompt("Analiz ve Verileri Güncellemek için Metin Ekleyin");
+    document.getElementById("body2").innerHTML=guncelle2;
+})
+
+function belge2(){
+    var blg2=window.confirm("Belge Oluşturmak İstediğinize Emin misiniz?");
+    if(blg2){
+        window.print();
+    }
+    else{
+        window.alert("BELGE OLUŞTURULMADI");
+    }
+}
+    </script>
+</body>
+</html>

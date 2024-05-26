@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #buton3{
+            color: darkgrey;
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+            margin-right: 6%;
+        }
+        #buton4{
+            color: darkgrey;
+            font-size: medium;  
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #div3{
+            background-color: chartreuse;
+            font-size: larger;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 200;
+            width: 350px;
+            height: 140px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            float: left;
+        }
+        #buton5{
+            color:darkkhaki;
+            font-size: small;
+            font-weight: 100;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 1%;
+            margin-top: 10px;
+        }
+        #div2{
+           width: 1000px;
+           height: 1000px;
+           background-color: brown;
+           text-align:start;
+           float: left;
+        }
+        #div5{
+            width: 500px;
+            height: 1000px;
+            background-color:blanchedalmond;
+            float: left;
+        }
+        #div6{
+            width: 500px;
+            height: 500px;
+            background-color: cornflowerblue;
+            background-image: url("photo1.jpg");
+            background-repeat: no-repeat;
+            background-size:contain;
+            float: left;
+        }
+
+
+
+        #navbar{
+height: 8vh;
+width: 100%;
+background-color: black;
+color: white;
+display: flex;
+align-items: center;
+flex-direction: row;
+justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+h2{
+    cursor: pointer;
+    transition: 0.8s;
+}
+a:hover{
+    color: red;
+}
+h2:hover{
+    color:red;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <h2>DENEME</h2>
+        <a href="ders15.html" target="_blank">ANA SAYFA </a>
+        <a href="ders18.html" target="_blank">KULLANICI GİRİŞ</a>
+        <a href="ders17.html" target="_blank">YÖNETİCİ GİRİŞ</a>
+        <a href="ders30.html" target="_blank">İLETİŞİM</a>
+
+    </nav>
+
+    <h2>Laborant Hasta İşlemleri Sayfamıza Hoşgeldiniz</h2>
+    <div id="div2">
+        <div id="div6">LABORANT SAĞLIK OTOMASYON(PATTIENT INFORMATION)</div>
+        <div id="div3"></div>
+        <button id="buton3">KULLANICI GİRİŞ</button>
+        <BUtton id="buton4">YÖNETİCİ GİRİŞ</BUtton>
+        <button id="buton5">BİLGİ AL</button>
+    </div>
+    <div id="div5"></div>
+
+
+<script>
+document.getElementById("div3").innerHTML=" Kayıt için kullanıcı girişini seçiniz.Hasta verilerine erişim,güncelleme gibi değişiklikler için yönetici girişini seçiniz.Bilgi almak için ise lütfen yandaki butona tıklayınız.";
+function saat(){
+var tarih=new Date().toLocaleString('tr-TR')
+document.getElementById("div5").innerHTML="<h7>SAAT</h7>: "+tarih+"<br><br><br><br><h3>Laborant Hasta İşlemleri Sayfamıza Hoşgeldiniz.Hastaysanız tahlillerinizi görüntülemek için kullanıcı girişi yapınız.Laborantsanız yönetici girişi yapınız.Sistemimize yönetici olarak eriştikten sonra hasta bilgileri ve kayıtlı rapor analizlerine ulaşmak için en az bir hasta silmeniz gerekmektedir.</h3>";
+
+}
+setInterval(saat,1000);
+/*function open(){
+    window.open("http://www.google.com","_blank","width=300px, height=300px")
+}*/
+document.getElementById("buton4").addEventListener("click",function(){
+window.open("ders17.html","_blank")
+})
+document.getElementById("buton3").addEventListener("click",function(){
+window.open("ders18.html","_blank")
+})
+    </script>
+</body>
+</html>

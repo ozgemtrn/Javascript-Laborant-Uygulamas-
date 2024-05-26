@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>LÜTFEN LABORANTINIZI SEÇİNİZ</h3>
+    <button id="bt1">Hüseyin Karaçam</button>
+    <button id="bt2">Mehmet Ali Güngören</button>
+    <button id="bt3">Hikmet Avcı</button>
+
+
+    <script>
+document.getElementById("bt1").addEventListener("click",function(){
+    var prt1=prompt("Hasta numaranızı giriniz: ");
+if(prt1==1){
+    window.alert("TEŞHİS EDİLEN HASTALIĞINIZ  =>  BRONŞİT")
+}
+if(prt1==2){
+    window.alert("TEŞHİS EDİLEN HASTALIĞINIZ  =>  TİP 2 DİYABET")
+}
+if(prt1==3){
+    window.alert("TEŞHİS EDİLEN HASTALIĞINIZ  =>  PARKİNSON")
+}
+if(prt1==4){
+    window.alert("TEŞHİS EDİLEN HASTALIĞINIZ  =>  ROMATİZMA")
+}
+})
+
+
+document.getElementById("bt2").addEventListener("click",function(){
+    var prt2=prompt("Hasta numaranızı giriniz: ");
+    if(prt2==5){
+        window.alert("TEŞHİS EDİLEN HASTALIĞINIZ  =>  ALZHEİMER")
+    }
+    if(prt2==6){
+        window.alert("TEŞHİS EDİLEN HASTALIĞINIZ  =>  ORTASTATİK HİPOTANSİYON")
+    }
+})
+
+document.getElementById("bt3").addEventListener("click",function(){
+    var prt3=prompt("Hasta numaranızı giriniz: ");
+    if(prt3==7){
+        window.alert("TEŞHİS EDİLEN HASTALIĞINIZ  =>  KALP KRİZİ")
+    }
+    if(prt3==8){
+        window.alert("TEŞHİS EDİLEN HASTALIĞINIZ  =>  ANEMİ")
+    }
+})
+    </script>
+</body>
+</html>

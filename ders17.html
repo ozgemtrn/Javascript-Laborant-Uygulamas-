@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 60%;
+            height: 540px;
+            background-color: lightgray;
+            position: absolute;
+            border-radius: 10px;
+            left: 20%;
+            top: 15%;
+        }
+        #kullaniciAdi{
+            width: 100px;
+            height: 17px;
+            margin-left: 12px;
+            margin-top: 12px;
+        }
+        #parola{
+            width: 100px;
+            height: 17px;
+            margin-left: 6px;
+        }
+        #btn{
+            height: 30px;
+            background-color: greenyellow;
+            margin-left: 330px;
+            margin-top: 30px;
+        }
+        #div2{
+            width: 100px;
+            height: 140px;
+            background-color: white;
+
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="div2"></div>
+    <div id="div1"> <h3>LABORANT SAĞLIK OTOMASYONU <br> YÖNETİCİ GİRİŞ FORMU</h3>
+        <label style="margin-left: 8px;" for="kullaniciadi">Kullanıcı Adı: </label> 
+        <input id="kullaniciAdi" type="text" />
+        <label style="margin-left: 8px;" for="parola">Parola: </label>
+        <input id="parola" type="password">
+        <button id="btn" onclick="girisonayi()">Giriş Yap</button>
+    </div>
+
+    <script>
+     
+     var kullanicilar=[{kullaniciAdi:"laborant",parola:"sistem14"},
+        {kullaniciAdi:"yasin",parola:1234},
+        {kullaniciAdi:"enes",parola:4321}
+     ];
+     var girilenkullaniciadi;
+     var girilenparola;
+     var x;
+     function kontrolet(){
+        girilenkullaniciadi=document.getElementById("kullaniciAdi").value;
+        girilenparola=document.getElementById("parola").value;
+        for(x of kullanicilar){
+            if((x.kullaniciAdi==girilenkullaniciadi) && (x.parola==girilenparola)){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+     }
+     function girisonayi(){
+        kontrolet();
+        if(kontrolet()){
+            window.open("ders20.html","_self");
+        }
+        else{
+            alert("Hatalı kullanıcı adı ya da parola.Yeniden deneyin.")
+        }
+     }
+
+     var result;
+     function degis(){
+        var list=["blue","red","green","aqua","orange","yellow","black","grey","brown",
+        "gold","lilac","pink","sky blue","purple","navy","turquoise"
+        ];
+        var random=Math.round(Math.random()*3);
+        result=list[random];
+     }
+     setInterval(function(){
+        degis();
+        document.getElementById("div1").style.backgroundColor=result;
+     },1500);
+
+var tarih=new Date().toLocaleString('tr-TR')
+document.getElementById("div2").innerHTML="<h9>TARİH</h9>: "+tarih;
+setInterval(saat,1000);
+
+    </script>
+</body>
+</html>

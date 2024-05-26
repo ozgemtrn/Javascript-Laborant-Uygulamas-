@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div100{
+            width: 150px;
+            height: 60px;
+            background-color:red;
+            border-bottom-right-radius: 25px;
+        }
+        #body{
+            background-color: greenyellow;
+        }
+        #text2{
+            font-size: 5em;
+            letter-spacing: 1px;
+            font-family: monospace;
+            width: 700px;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: 
+                typing 5s steps(20),
+                cursor .2s step-end infinite alternate ;
+        }
+        @keyframes typing{
+            from {width: 0;}
+        }
+        
+    </style>
+</head>
+<body id="body">
+    <div id="div100"></div>
+    <h2>Laborant Sağlık Sistemi hasta rapor ve tahlil socunu erişim sayfasına hoşgeldiniz</h1>
+    <button id="btn1">Verileri Güncelle</button>
+    <p id="text2">LABORANT SAĞLIK</p>
+    <button id="tikla1" onclick="belge1()">BELGE OLUŞTUR</button>
+
+    <script>
+        document.write("<h3>Hastanın tahlil bilgileri aşağıdaki gibidir: </h3><br><br>");
+        document.write("Bronşit, akciğerlere hava taşıyan bronşların iltihaplanmasıdır. Bronşlar, hava yollarının içini kaplayan ve nefes alıp verirken hava akışını kontrol etmeye yardımcı olan kaslar ve mukusla kaplı tüplerdir. Bronşit iltihaplanırsa, bronşlar şişer ve daralır ve bu da nefes darlığı ve öksürüğe neden olabilir.Bronşit belirtileri şunlardır:Öksürük: Bu, bronşitin en yaygın belirtisidir. Öksürük kuru veya balgamlı olabilir.Nefes darlığı: Nefes darlığı, egzersiz yaparken veya merdiven çıkarken nefes darlığı veya göğüste sıkışma hissi olarak ortaya çıkabilir.Hırıltı: Hırıltı, nefes alırken duyulan ıslık sesi veya hırıltılı bir sestir.Göğüs ağrısı: Göğüs ağrısı, özellikle derin nefes alırken veya öksürürken ortaya çıkabilir.Yapılan tetkikler sonucunda hastanın kronik solunum yolu ve sigara kullanımına bağlı bronşit belirtisi gözlenmiştir <h3>-Yorgunluk</h3>\n<h3>-Ateş</h3>\n<h3>-Vücut ağrıları</h3>\n<h3>-Boğaz Ağrısı</h3>\n<h3>-Burun Akıntısı</h3><br>");
+        document.write("<h4>NOT= 1 numarada yer alan hasta yukarıda özellikleri verilen bronşit hastalığına sahiptir</h4>\n");
+        document.write("<h4>Hastanın laborantı=>Hüseyin Karaçam</h4>")
+
+
+var tarih2=new Date().toLocaleString('tr-TR')
+document.getElementById("div100").innerHTML="<h9>TARİH</h9>: "+tarih2;
+
+document.write("\nRaporun verildiği tarih: " +tarih2);
+
+function saat3(){
+var tarih3=new Date().toLocaleString('tr-TR')
+document.getElementById("div100").innerHTML="<h9>TARİH</h9>: "+tarih3;
+}
+setInterval(saat3,1000);
+var guncelle;
+document.getElementById("btn1").addEventListener("click",function(){
+    guncelle=prompt("Analiz ve Verileri Güncellemek için Metin Ekleyin");
+    document.getElementById("body").innerHTML=guncelle;
+})
+
+function belge1(){
+    var blg1=window.confirm("Belge Oluşturmak İstediğinize Emin misiniz?");
+    if(blg1){
+        window.print();
+    }
+    else{
+        window.alert("BELGE OLUŞTURULMADI");
+    }
+}
+    </script>
+</body>
+</html>

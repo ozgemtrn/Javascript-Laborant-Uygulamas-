@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 1000;
+            height: 500px;
+            background-color: aqua;
+            background-image: url("saglik.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #div2{
+
+            width: 300px;
+            height: 190px;
+            background-color: darkslateblue;
+            text-align:start;
+            float: left;
+        }
+        #buton2{
+            font-size: medium;
+            background-color: brown;
+            border-radius: 0svw;
+        }
+        #body{
+            background-color:antiquewhite;
+        }
+        #div3{
+            background-color: chartreuse;
+            font-size: larger;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 200;
+            width: 350px;
+            height: 140px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        #div4{
+            width: 240px;
+            height: 40px;
+            margin-left: 1300px;
+            margin-top: 165px;
+        }
+        #buton1{
+            font-size: medium;
+            border-radius: 0svw;
+            margin-right: 20%;
+            margin-left: 820px;
+        }
+        #buton3{
+            font-size: medium;
+            border-radius: 0svw;
+            margin-right: 20%;
+            margin-left: 820px;
+        }
+        #buton4{
+            font-size: medium;
+            border-radius: 0svw;
+            margin-right: 20%;
+            margin-left: 820px;
+            color: darkgrey;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #buton5{
+            font-size: medium;
+            border-radius: 0svw;
+            margin-right: 20%;
+            margin-left: 820px;
+        }
+        #buton6{
+            font-size: medium;
+            border-radius: 0svw;
+            margin-right: 20%;
+            margin-left: 820px;
+        }
+        #buton7{
+            font-size: medium;
+            border-radius: 0svw;
+            margin-right: 20%;
+            margin-left: 820px;
+        }
+        #buton8{
+            font-size: medium;
+            border-radius: 0svw;
+            margin-right: 20%;
+            margin-left: 820px;
+        }
+        #buton9{
+            font-size: medium;
+            border-radius: 0svw;
+            margin-right: 20%;
+            margin-left: 820px;
+        }
+        #buton10{
+            font-size: medium;
+            border-radius: 0svw;
+            margin-right: 20%;
+            margin-left: 847px;
+        }
+        #buton11{
+            font-size: medium;
+            border-radius: 0svw;
+            width: 60px;
+            height: 30px;
+            background-color: darkgray;
+            margin-right: 200px;
+        }
+        #div5{
+            width: 150px;
+            height: 180px;
+            background-color: blue;
+            float: left;
+        }
+        #div6{
+            width: 150px;
+            height: 180px;
+            background-color:darkmagenta;
+            float: left;
+        }
+        #div15{
+            width: 150px;
+            height: 180px;
+            background-color:deepskyblue;
+            float: left;
+        }
+        #div16{
+            width: 150px;
+            height: 180px;
+            background-color:cornsilk;
+            float: left;
+        }
+        #div17{
+            width: 150px;
+            height: 180px;
+            background-color:lime;
+            float: left;
+        }
+        #div18{
+            width: 150px;
+            height: 180px;
+            background-color:slategray;
+            float: left;
+        }
+        #div19{
+            width: 150px;
+            height: 180px;
+            background-color:thistle;
+            float: left;
+        }
+        #buton900{
+            width: 80px;
+            height: 40px;
+            background-color: white;
+        }
+        #div34{
+            width: 180px;
+            height: 90px;
+            background-color:aquamarine;
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="div1">LABORANT SAĞLIK OTOMASYON(PATTIENT INFORMATION)</div>
+    <div id="div7"></div>
+    <div id="div8"></div>
+    <div id="div9"></div>
+    <div id="div10"></div>
+    <div id="div11"></div>
+    <div id="div12"></div>
+    <div id="div13"></div>
+    <div id="div14"></div>
+
+    
+
+    
+    <button id="buton1" onclick="sayfaac()">TIKLA</button> 
+    <button id="buton3" onclick="sayfaac2()">HASTA EKLE</button>
+    <button id="buton4" onclick="sayfaac3()">HASTA EKLE</button>
+    <button id="buton5" onclick="sayfaac4()">HASTA EKLE</button>
+    <button id="buton6" onclick="sayfaac5()">HASTA EKLE</button>
+    <button id="buton7" onclick="sayfaac6()">HASTA EKLE</button>
+    <button id="buton8" onclick="sayfaac7()">HASTA EKLE</button>
+    <button id="buton9" onclick="sayfaac8()">HASTA EKLE</button>
+    <button id="buton10" onclick="sil()" >HASTA SİL</button>
+    <button id="buton2" onclick="say()" >KAYDET</button>
+    <div id="div20"></div>
+    <button id="buton100" onclick="bilgi1()">HASTA 1</button>
+    <button id="buton200" onclick="bilgi2()">HASTA 2</button>
+    <button id="buton300" onclick="bilgi3()">HASTA 3</button>
+    <button id="buton400" onclick="bilgi4()">HASTA 4</button>
+    <button id="buton500" onclick="bilgi5()">HASTA 5</button>
+    <button id="buton600" onclick="bilgi6()">HASTA 6</button>
+    <button id="buton700" onclick="bilgi7()">HASTA 7</button>
+    <button id="buton800" onclick="bilgi8()">HASTA 8</button>
+    <button id="buton900" onclick="aramayap()">ARAMA YAP</button>
+    <div id="div2"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+    <div id="div6"></div>
+    <div id="div15"></div>
+    <div id="div16"></div>
+    <div id="div17"></div>
+    <div id="div18"></div>
+    <div id="div19"></div>
+    <div id="div34"></div>
+          
+
+
+    
+
+
+<script>
+
+
+document.getElementById("buton100").hidden=true;
+document.getElementById("buton200").hidden=true;
+document.getElementById("buton300").hidden=true;
+document.getElementById("buton400").hidden=true;
+document.getElementById("buton500").hidden=true;
+document.getElementById("buton600").hidden=true;
+document.getElementById("buton700").hidden=true;
+document.getElementById("buton800").hidden=true;
+document.getElementById("buton900").hidden=true;
+document.getElementById("div2").hidden=true;
+document.getElementById("div5").hidden=true;
+document.getElementById("div6").hidden=true;
+document.getElementById("div15").hidden=true;
+document.getElementById("div16").hidden=true;
+document.getElementById("div17").hidden=true;
+document.getElementById("div18").hidden=true;
+document.getElementById("div19").hidden=true;
+document.getElementById("div20").hidden=true;
+document.getElementById("div34").hidden=true;
+document.getElementById("buton2").hidden=true;
+document.getElementById("buton3").hidden=true;
+document.getElementById("buton4").hidden=true;
+document.getElementById("buton5").hidden=true;
+document.getElementById("buton6").hidden=true;
+document.getElementById("buton7").hidden=true;
+document.getElementById("buton8").hidden=true;
+document.getElementById("buton9").hidden=true;
+document.getElementById("buton10").hidden=true;
+document.getElementById("buton11").hidden=true;
+document.getElementById("buton1").style.width="150px";
+document.getElementById("buton3").style.width="150px";
+document.getElementById("buton4").style.width="150px";
+document.getElementById("buton5").style.width="150px";
+document.getElementById("buton6").style.width="150px";
+document.getElementById("buton7").style.width="150px";
+document.getElementById("buton8").style.width="150px";
+document.getElementById("buton9").style.width="150px";
+
+function saat(){
+var tarih=new Date().toLocaleString('tr-TR');
+document.getElementById("div4").innerHTML="<h7>SAAT</h7>: "+tarih;
+}
+setInterval(saat,1000);
+
+
+
+
+
+var a;
+var b;
+var c;
+var a1;
+var b1;
+var c1;
+var a2;
+var b2;
+var c2;
+var a3;
+var b3;
+var c3;
+var a4;
+var b4;
+var c4;
+var a5;
+var b5;
+var c5;
+var a6;
+var b6;
+var c6;
+var a7;
+var b7;
+var c7;
+var degisken1;
+var degisken2;
+var degisken3;
+var degisken4;
+var degisken5;
+var degisken6;
+var degisken7;
+var degisken8;
+function sayfaac(){
+ degisken1=Math.round(Math.random()*1000);
+ degisken2=Math.round(Math.random()*1000);
+ degisken3=Math.round(Math.random()*1000);
+ degisken4=Math.round(Math.random()*1000);
+ degisken5=Math.round(Math.random()*1000);
+ degisken6=Math.round(Math.random()*1000);
+ degisken7=Math.round(Math.random()*1000);
+ degisken8=Math.round(Math.random()*1000);
+if((degisken1==degisken2)||(degisken1==degisken3)||(degisken1==degisken4)||(degisken1==degisken5)||(degisken1==degisken6)||(degisken1==degisken7)||(degisken1==degisken8)||(degisken2==degisken3)||(degisken2==degisken4)||(degisken2==degisken5)||(degisken2==degisken6)||(degisken2==degisken7)||(degisken2==degisken8)||(degisken3==degisken4)||(degisken3==degisken5)||(degisken3==degisken6)||(degisken3==degisken7)||(degisken3==degisken8)||(degisken4==degisken5)||(degisken4==degisken6)||(degisken4==degisken7)||(degisken4==degisken8)||(degisken5==degisken6)||(degisken5==degisken7)||(degisken5==degisken8)||(degisken6==degisken7)||(degisken6==degisken8)||(degisken7==degisken8)){
+    window.alert("HATA!LÜTFEN TEKRAR DENEYİNİZ");
+    window.open("ders17.html","_blank");
+}
+a=prompt("HASTA İSMİNİ GİRİNİZ:")
+b=prompt("HASTA SOYİSMİNİ GİRİNİZ:")
+
+document.getElementById("buton900").hidden=false;
+document.getElementById("buton900").style.marginLeft="940px";  
+/*document.getElementById("buton900").style.width="80px";
+document.getElementById("buton900").style.height="45px";
+document.getElementById("buton900").style.backgroundColor="white";*/
+document.getElementById("buton3").style.marginLeft="840px";  
+document.getElementById("buton1").hidden=true;  
+document.getElementById("buton3").hidden=false;      
+document.getElementById("buton1").style.width="100px";
+//document.getElementById("div2").innerHTML=""
+document.getElementById("buton2").hidden=false;   
+document.getElementById("buton2").style.marginLeft="57%";
+document.getElementById("div1").style.width="1000px";
+document.getElementById("div1").style.height="500px";
+document.getElementById("div1").style.background="orange";
+document.getElementById("div1").innerHTML="<h2>HASTA BİLGİLERİ</h2><br><h3>Son Hasta Bilgisi</h3><br>Hasta İsmi: "+a+"<br>Hasta Soyismi: "+b+"<br>Dosya No: "+degisken1+"<br><br><h7>Hasta 1 dosya numarası:"+degisken1+" </h7><br><h7>Hasta 2 dosya numarası:"+degisken2+" </h7><br><h7>Hasta 3 dosya numarası:"+degisken3+" </h7><br><h7>Hasta 4 dosya numarası: "+degisken4+"</h7><br><h7>Hasta 5 dosya numarası:"+degisken5+" </h7><br><h7>Hasta 6 dosya numarası:"+degisken6+" </h7><br><h7>Hasta 7 dosya numarası:"+degisken7+" </h7><br><h7>Hasta 8 dosya numarası: "+degisken8+" </h7><br><br><br><br><br><br><br><br><br><br><br><h3>Hasta eklendi(Patient added)</h3><br><br><br><br><br><br><br><br><br><br>HASTA 1,HASTA 2,HASTA 3,HASTA 4=><h4>Laborant: Hüseyin Karaçam</h4><br>HASTA 5,HASTA 6=><h4>Laborant: Mehmet Ali Güngören</h4><br>HASTA 7,HASTA 8=><h4>Laborant: Hikmet Avcı</h4>";
+
+}
+
+
+document.getElementById("buton2").hidden=true;      
+
+
+document.getElementById("buton2").addEventListener("click",function(){
+document.getElementById("div1").style.width="1000px";
+document.getElementById("div1").style.height="500px";
+document.getElementById("div1").style.background="orange";
+document.getElementById("buton2").hidden=true;
+})
+
+
+function say(){
+document.getElementById("buton10").hidden=false;
+document.getElementById("div1").style.float="left";
+document.getElementById("div2").style.width="150px";
+document.getElementById("div2").style.height="170px";
+document.getElementById("div5").style.width="150px";
+document.getElementById("div5").style.height="170px";
+document.getElementById("div6").style.width="150px";
+document.getElementById("div6").style.height="170px";
+document.getElementById("div15").style.width="150px";
+document.getElementById("div15").style.height="170px";
+document.getElementById("div16").style.width="150px";
+document.getElementById("div16").style.height="170px";
+document.getElementById("div17").style.width="150px";
+document.getElementById("div17").style.height="170px";
+document.getElementById("div18").style.width="150px";
+document.getElementById("div18").style.height="170px";
+document.getElementById("div19").style.width="150px";
+document.getElementById("div19").style.height="170px";
+//document.getElementById("div2").style.background="yellow";
+//document.getElementById("div2").style.marginLeft="250px";
+//document.getElementById("div2").innerHTML="Hasta kaydedildi.<br>";
+document.getElementById("div7").style.width="200px";
+document.getElementById("div7").style.height="160px";
+document.getElementById("div7").style.background="aqua";
+document.getElementById("div7").style.float="left";
+document.getElementById("div7").innerHTML="Hasta Adı: "+a+"<br>Hasta Soyadı: "+b+"<br>Dosya No: "+degisken1+"<br><br><br><br><h7>1 NOLU HASTA KAYDEDİLDİ";
+document.getElementById("div8").style.width="200px";
+document.getElementById("div8").style.height="160px";
+document.getElementById("div8").style.background="red";
+document.getElementById("div8").style.float="left";
+document.getElementById("div8").innerHTML="Hasta Adı: "+a1+"<br>Hasta Soyadı: "+b1+"<br>Dosya No: "+c1+"<br><br><br><br><h7>2 NOLU HASTA KAYDEDİLDİ";
+document.getElementById("div9").style.width="200px";
+document.getElementById("div9").style.height="160px";
+document.getElementById("div9").style.background="yellow";
+document.getElementById("div9").style.float="left";
+document.getElementById("div9").innerHTML="Hasta Adı: "+a2+"<br>Hasta Soyadı: "+b2+"<br>Dosya No: "+c2+"<br><br><br><br><h7>3 NOLU HASTA KAYDEDİLDİ";
+document.getElementById("div10").style.width="200px";
+document.getElementById("div10").style.height="160px";
+document.getElementById("div10").style.background="green";
+document.getElementById("div10").style.float="left";
+document.getElementById("div10").innerHTML="Hasta Adı: "+a3+"<br>Hasta Soyadı: "+b3+"<br>Dosya No: "+c3+"<br><br><br><br><h7>4 NOLU HASTA KAYDEDİLDİ";
+document.getElementById("div11").style.width="200px";
+document.getElementById("div11").style.height="160px";
+document.getElementById("div11").style.background="brown";
+document.getElementById("div11").style.float="left";
+document.getElementById("div11").innerHTML="Hasta Adı: "+a4+"<br>Hasta Soyadı: "+b4+"<br>Dosya No: "+c4+"<br><br><br><br><h7>5 NOLU HASTA KAYDEDİLDİ";
+document.getElementById("div12").style.width="200px";
+document.getElementById("div12").style.height="160px";
+document.getElementById("div12").style.background="grey";
+document.getElementById("div12").style.float="left";
+document.getElementById("div12").innerHTML="Hasta Adı: "+a5+"<br>Hasta Soyadı: "+b5+"<br>Dosya No: "+c5+"<br><br><br><br><h7>6 NOLU HASTA KAYDEDİLDİ";
+document.getElementById("div13").style.width="200px";
+document.getElementById("div13").style.height="160px";
+document.getElementById("div13").style.background="orange";
+document.getElementById("div13").style.float="left";
+document.getElementById("div13").innerHTML="Hasta Adı: "+a6+"<br>Hasta Soyadı: "+b6+"<br>Dosya No: "+c6+"<br><br><br><br><h7>7 NOLU HASTA KAYDEDİLDİ";
+document.getElementById("div14").style.width="200px";
+document.getElementById("div14").style.height="160px";
+document.getElementById("div14").style.background="red";
+document.getElementById("div14").style.float="left";
+document.getElementById("div14").innerHTML="Hasta Adı: "+a7+"<br>Hasta Soyadı: "+b7+"<br>Dosya No: "+c7+"<br><br><br><br><h7>8 NOLU HASTA KAYDEDİLDİ";
+}
+
+
+
+
+function sayfaac2(){
+a1=prompt("HASTA İSMİNİ GİRİNİZ:")
+b1=prompt("HASTA SOYİSMİNİ GİRİNİZ:")
+c1=prompt("DOSYA NO GİRİNİZ:")
+if(degisken2==c1){
+    window.alert("Giriş Onaylandı");
+}
+else{
+    while(degisken2!=c1){
+        c1=prompt("DOSYA NO GİRİNİZ:");
+    }
+}
+document.getElementById("buton4").style.marginLeft="840px";  
+document.getElementById("buton3").hidden=true;  
+document.getElementById("buton4").hidden=false;      
+document.getElementById("buton3").style.width="100px";
+//document.getElementById("div2").innerHTML=""
+document.getElementById("buton2").hidden=false;   
+document.getElementById("buton2").style.marginLeft="57%";
+document.getElementById("div1").style.width="1000px";
+document.getElementById("div1").style.height="500px";
+document.getElementById("div1").style.background="orange";
+document.getElementById("div1").innerHTML="<h2>HASTA BİLGİLERİ</h2><br><h3>Son Hasta Bilgisi</h3><br>Hasta İsmi: "+a1+"<br>Hasta Soyismi: "+b1+"<br>Dosya No: "+c1+"<br><br><h7>Hasta 1 dosya numarası:"+degisken1+" </h7><br><h7>Hasta 2 dosya numarası:"+degisken2+" </h7><br><h7>Hasta 3 dosya numarası:"+degisken3+" </h7><br><h7>Hasta 4 dosya numarası: "+degisken4+"</h7><br><h7>Hasta 5 dosya numarası:"+degisken5+" </h7><br><h7>Hasta 6 dosya numarası:"+degisken6+" </h7><br><h7>Hasta 7 dosya numarası:"+degisken7+" </h7><br><h7>Hasta 8 dosya numarası: "+degisken8+" </h7><br><br><br><br><br><br><br><br><br><br><br><h3>Hasta eklendi(Patient added)</h3><br><br><br><br><br><br><br><br><br><br>HASTA 1,HASTA 2,HASTA 3,HASTA 4=><h4>Laborant: Hüseyin Karaçam</h4><br>HASTA 5,HASTA 6=><h4>Laborant: Mehmet Ali Güngören</h4><br>HASTA 7,HASTA 8=><h4>Laborant: Hikmet Avcı</h4>";
+
+}
+function sayfaac3(){
+a2=prompt("HASTA İSMİNİ GİRİNİZ:")
+b2=prompt("HASTA SOYİSMİNİ GİRİNİZ:")
+c2=prompt("DOSYA NO GİRİNİZ:")
+if(degisken3==c2){
+    window.alert("Giriş Onaylandı");
+}
+else {
+    while(degisken3!=c2){
+        c2=prompt("DOSYA NO GİRİNİZ:");
+    }
+}
+document.getElementById("buton5").style.marginLeft="840px";  
+document.getElementById("buton4").hidden=true;  
+document.getElementById("buton5").hidden=false;      
+document.getElementById("buton4").style.width="100px";
+//document.getElementById("div2").innerHTML=""
+document.getElementById("buton2").hidden=false;   
+document.getElementById("buton2").style.marginLeft="57%";
+document.getElementById("div1").style.width="1000px";
+document.getElementById("div1").style.height="500px";
+document.getElementById("div1").style.background="orange";
+document.getElementById("div1").innerHTML="<h2>HASTA BİLGİLERİ</h2><br><h3>Son Hasta Bilgisi</h3><br>Hasta İsmi: "+a2+"<br>Hasta Soyismi: "+b2+"<br>Dosya No: "+c2+"<br><br><h7>Hasta 1 dosya numarası:"+degisken1+" </h7><br><h7>Hasta 2 dosya numarası:"+degisken2+" </h7><br><h7>Hasta 3 dosya numarası:"+degisken3+" </h7><br><h7>Hasta 4 dosya numarası: "+degisken4+"</h7><br><h7>Hasta 5 dosya numarası:"+degisken5+" </h7><br><h7>Hasta 6 dosya numarası:"+degisken6+" </h7><br><h7>Hasta 7 dosya numarası:"+degisken7+" </h7><br><h7>Hasta 8 dosya numarası: "+degisken8+" </h7><br><br><br><br><br><br><br><br><br><br><br><h3>Hasta eklendi(Patient added)</h3><br><br><br><br><br><br><br><br><br><br>HASTA 1,HASTA 2,HASTA 3,HASTA 4=><h4>Laborant: Hüseyin Karaçam</h4><br>HASTA 5,HASTA 6=><h4>Laborant: Mehmet Ali Güngören</h4><br>HASTA 7,HASTA 8=><h4>Laborant: Hikmet Avcı</h4>";
+
+}
+function sayfaac4(){
+a3=prompt("HASTA İSMİNİ GİRİNİZ:")
+b3=prompt("HASTA SOYİSMİNİ GİRİNİZ:")
+c3=prompt("DOSYA NO GİRİNİZ:")
+if(degisken4==c3){
+    window.alert("Giriş Onaylandı");
+}
+else{
+    while(degisken4!=c3){
+        c3=prompt("DOSYA NO GİRİNİZ:");
+    }
+}
+document.getElementById("buton6").style.marginLeft="840px";  
+document.getElementById("buton5").hidden=true; 
+document.getElementById("buton6").hidden=false;      
+document.getElementById("buton5").style.width="100px";
+//document.getElementById("div2").innerHTML=""
+document.getElementById("buton2").hidden=false;   
+document.getElementById("buton2").style.marginLeft="57%";
+document.getElementById("div1").style.width="1000px";
+document.getElementById("div1").style.height="500px";
+document.getElementById("div1").style.background="orange";
+document.getElementById("div1").innerHTML="<h2>HASTA BİLGİLERİ</h2><br><h3>Son Hasta Bilgisi</h3><br>Hasta İsmi: "+a3+"<br>Hasta Soyismi: "+b3+"<br>Dosya No: "+c3+"<br><br><h7>Hasta 1 dosya numarası:"+degisken1+" </h7><br><h7>Hasta 2 dosya numarası:"+degisken2+" </h7><br><h7>Hasta 3 dosya numarası:"+degisken3+" </h7><br><h7>Hasta 4 dosya numarası: "+degisken4+"</h7><br><h7>Hasta 5 dosya numarası:"+degisken5+" </h7><br><h7>Hasta 6 dosya numarası:"+degisken6+" </h7><br><h7>Hasta 7 dosya numarası:"+degisken7+" </h7><br><h7>Hasta 8 dosya numarası: "+degisken8+" </h7><br><br><br><br><br><br><br><br><br><br><br><h3>Hasta eklendi(Patient added)</h3><br><br><br><br><br><br><br><br><br><br>HASTA 1,HASTA 2,HASTA 3,HASTA 4=><h4>Laborant: Hüseyin Karaçam</h4><br>HASTA 5,HASTA 6=><h4>Laborant: Mehmet Ali Güngören</h4><br>HASTA 7,HASTA 8=><h4>Laborant: Hikmet Avcı</h4>";
+
+}
+function sayfaac5(){
+a4=prompt("HASTA İSMİNİ GİRİNİZ:")
+b4=prompt("HASTA SOYİSMİNİ GİRİNİZ:")
+c4=prompt("DOSYA NO GİRİNİZ:")
+if(degisken5==c4){
+    window.alert("Giriş Onaylandı");
+}
+else{
+    while(degisken5!=c4){
+        c4=prompt("DOSYA NO GİRİNİZ:");
+    }
+}
+document.getElementById("buton7").style.marginLeft="840px";  
+document.getElementById("buton6").hidden=true; 
+document.getElementById("buton7").hidden=false;       
+document.getElementById("buton6").style.width="100px";
+//document.getElementById("div2").innerHTML=""
+document.getElementById("buton2").hidden=false;   
+document.getElementById("buton2").style.marginLeft="57%";
+document.getElementById("div1").style.width="1000px";
+document.getElementById("div1").style.height="500px";
+document.getElementById("div1").style.background="orange";
+document.getElementById("div1").innerHTML="<h2>HASTA BİLGİLERİ</h2><br><h3>Son Hasta Bilgisi</h3><br>Hasta İsmi: "+a4+"<br>Hasta Soyismi: "+b4+"<br>Dosya No: "+c4+"<br><br><h7>Hasta 1 dosya numarası:"+degisken1+" </h7><br><h7>Hasta 2 dosya numarası:"+degisken2+" </h7><br><h7>Hasta 3 dosya numarası:"+degisken3+" </h7><br><h7>Hasta 4 dosya numarası: "+degisken4+"</h7><br><h7>Hasta 5 dosya numarası:"+degisken5+" </h7><br><h7>Hasta 6 dosya numarası:"+degisken6+" </h7><br><h7>Hasta 7 dosya numarası:"+degisken7+" </h7><br><h7>Hasta 8 dosya numarası: "+degisken8+" </h7><br><br><br><br><br><br><br><br><br><br><br><h3>Hasta eklendi(Patient added)</h3><br><br><br><br><br><br><br><br><br><br>HASTA 1,HASTA 2,HASTA 3,HASTA 4=><h4>Laborant: Hüseyin Karaçam</h4><br>HASTA 5,HASTA 6=><h4>Laborant: Mehmet Ali Güngören</h4><br>HASTA 7,HASTA 8=><h4>Laborant: Hikmet Avcı</h4>";
+
+}
+function sayfaac6(){
+a5=prompt("HASTA İSMİNİ GİRİNİZ:")
+b5=prompt("HASTA SOYİSMİNİ GİRİNİZ:")
+c5=prompt("DOSYA NO GİRİNİZ:")
+if(degisken6==c5){
+    window.alert("Giriş Onaylandı");
+}
+else{
+    while(degisken6!=c5){
+        c5=prompt("DOSYA NO GİRİNİZ:");
+    }
+}
+document.getElementById("buton8").style.marginLeft="840px";  
+document.getElementById("buton7").hidden=true; 
+document.getElementById("buton8").hidden=false;       
+document.getElementById("buton6").style.width="100px";
+//document.getElementById("div2").innerHTML=""
+document.getElementById("buton2").hidden=false;   
+document.getElementById("buton2").style.marginLeft="57%";
+document.getElementById("div1").style.width="1000px";
+document.getElementById("div1").style.height="500px";
+document.getElementById("div1").style.background="orange";
+document.getElementById("div1").innerHTML="<h2>HASTA BİLGİLERİ</h2><br><h3>Son Hasta Bilgisi</h3><br>Hasta İsmi: "+a5+"<br>Hasta Soyismi: "+b5+"<br>Dosya No: "+c5+"<br><br><h7>Hasta 1 dosya numarası:"+degisken1+" </h7><br><h7>Hasta 2 dosya numarası:"+degisken2+" </h7><br><h7>Hasta 3 dosya numarası:"+degisken3+" </h7><br><h7>Hasta 4 dosya numarası: "+degisken4+"</h7><br><h7>Hasta 5 dosya numarası:"+degisken5+" </h7><br><h7>Hasta 6 dosya numarası:"+degisken6+" </h7><br><h7>Hasta 7 dosya numarası:"+degisken7+" </h7><br><h7>Hasta 8 dosya numarası: "+degisken8+" </h7><br><br><br><br><br><br><br><br><br><br><br><h3>Hasta eklendi(Patient added)</h3><br><br><br><br><br><br><br><br><br><br>HASTA 1,HASTA 2,HASTA 3,HASTA 4=><h4>Laborant: Hüseyin Karaçam</h4><br>HASTA 5,HASTA 6=><h4>Laborant: Mehmet Ali Güngören</h4><br>HASTA 7,HASTA 8=><h4>Laborant: Hikmet Avcı</h4>";
+
+}
+function sayfaac7(){
+document.getElementById("buton9").style.marginLeft="840px";  
+a6=prompt("HASTA İSMİNİ GİRİNİZ:")
+b6=prompt("HASTA SOYİSMİNİ GİRİNİZ:")
+c6=prompt("DOSYA NO GİRİNİZ:")
+if(degisken7==c6){
+    window.alert("Giriş Onaylandı");
+}
+else{
+    while(degisken7!=c6){
+        c6=prompt("DOSYA NO GİRİNİZ:");
+    }
+}
+document.getElementById("buton8").hidden=true; 
+document.getElementById("buton9").hidden=false; 
+document.getElementById("buton6").style.width="100px";
+//document.getElementById("div2").innerHTML=""
+document.getElementById("buton2").hidden=false;   
+document.getElementById("buton2").style.marginLeft="57%";
+document.getElementById("div1").style.width="1000px";
+document.getElementById("div1").style.height="500px";
+document.getElementById("div1").style.background="orange";
+document.getElementById("div1").innerHTML="<h2>HASTA BİLGİLERİ</h2><br><h3>Son Hasta Bilgisi</h3><br>Hasta İsmi: "+a6+"<br>Hasta Soyismi: "+b6+"<br>Dosya No: "+c6+"<br><br><h7>Hasta 1 dosya numarası:"+degisken1+" </h7><br><h7>Hasta 2 dosya numarası:"+degisken2+" </h7><br><h7>Hasta 3 dosya numarası:"+degisken3+" </h7><br><h7>Hasta 4 dosya numarası: "+degisken4+"</h7><br><h7>Hasta 5 dosya numarası:"+degisken5+" </h7><br><h7>Hasta 6 dosya numarası:"+degisken6+" </h7><br><h7>Hasta 7 dosya numarası:"+degisken7+" </h7><br><h7>Hasta 8 dosya numarası: "+degisken8+" </h7><br><br><br><br><br><br><br><br><br><br><br><h3>Hasta eklendi(Patient added)</h3><br><br><br><br><br><br><br><br><br><br>HASTA 1,HASTA 2,HASTA 3,HASTA 4=><h4>Laborant: Hüseyin Karaçam</h4><br>HASTA 5,HASTA 6=><h4>Laborant: Mehmet Ali Güngören</h4><br>HASTA 7,HASTA 8=><h4>Laborant: Hikmet Avcı</h4>";
+
+}
+function sayfaac8(){
+a7=prompt("HASTA İSMİNİ GİRİNİZ:")
+b7=prompt("HASTA SOYİSMİNİ GİRİNİZ:")
+c7=prompt("DOSYA NO GİRİNİZ:")
+if(degisken8==c7){
+    window.alert("Giriş Onaylandı");
+}
+else{
+    while(degisken8!=c7){
+        c7=prompt("DOSYA NO GİRİNİZ:");
+    }
+}
+document.getElementById("buton9").style.marginLeft="840px";  
+document.getElementById("buton9").hidden=true; 
+document.getElementById("buton6").style.width="100px";
+//document.getElementById("div2").innerHTML=""
+document.getElementById("buton2").hidden=false;   
+document.getElementById("buton2").style.marginLeft="57%";
+document.getElementById("div1").style.width="1000px";
+document.getElementById("div1").style.height="500px";
+document.getElementById("div1").style.background="orange";
+document.getElementById("div1").innerHTML="<h2>HASTA BİLGİLERİ</h2><br><h3>Son Hasta Bilgisi</h3><br>Hasta İsmi: "+a7+"<br>Hasta Soyismi: "+b7+"<br>Dosya No: "+c7+"<br><br><h7>Hasta 1 dosya numarası:"+degisken1+" </h7><br><h7>Hasta 2 dosya numarası:"+degisken2+" </h7><br><h7>Hasta 3 dosya numarası:"+degisken3+" </h7><br><h7>Hasta 4 dosya numarası: "+degisken4+"</h7><br><h7>Hasta 5 dosya numarası:"+degisken5+" </h7><br><h7>Hasta 6 dosya numarası:"+degisken6+" </h7><br><h7>Hasta 7 dosya numarası:"+degisken7+" </h7><br><h7>Hasta 8 dosya numarası: "+degisken8+" </h7><br><br><br><br><br><br><br><br><br><br><br><h3>Hasta eklendi(Patient added)</h3><br><br><br><br><br><br><br><br><br><br>HASTA 1,HASTA 2,HASTA 3,HASTA 4=><h4>Laborant: Hüseyin Karaçam</h4><br>HASTA 5,HASTA 6=><h4>Laborant: Mehmet Ali Güngören</h4><br>HASTA 7,HASTA 8=><h4>Laborant: Hikmet Avcı</h4>";
+
+}
+var k;
+var m;
+var n;
+function sil(){
+k=prompt("SİLİNECEK İSMİ GİRİNİZ:");
+m=prompt("SİLİNECEK SOYİSMİ GİRİNİZ:");
+n=prompt("SİLİNECEK NO GİRİNİZ:");
+
+document.getElementById("buton100").hidden=false;
+document.getElementById("buton100").style.width="80px";
+document.getElementById("buton100").style.height="40px";
+document.getElementById("buton100").style.backgroundColor="white";
+document.getElementById("buton100").style.marginTop="10px";
+document.getElementById("buton100").style.borderBottomLeftRadius="20px";
+document.getElementById("buton100").style.borderTopLeftRadius="20px";
+document.getElementById("buton200").hidden=false;
+document.getElementById("buton200").style.width="80px";
+document.getElementById("buton200").style.height="40px";
+document.getElementById("buton200").style.backgroundColor="white";
+document.getElementById("buton300").hidden=false;
+document.getElementById("buton300").style.width="80px";
+document.getElementById("buton300").style.height="40px";
+document.getElementById("buton300").style.backgroundColor="white";
+document.getElementById("buton400").hidden=false;
+document.getElementById("buton400").style.width="80px";
+document.getElementById("buton400").style.height="40px";
+document.getElementById("buton400").style.backgroundColor="white";
+document.getElementById("buton500").hidden=false;
+document.getElementById("buton500").style.width="80px";
+document.getElementById("buton500").style.height="40px";
+document.getElementById("buton500").style.backgroundColor="white";
+document.getElementById("buton600").hidden=false;
+document.getElementById("buton600").style.width="80px";
+document.getElementById("buton600").style.height="40px";
+document.getElementById("buton600").style.backgroundColor="white";
+document.getElementById("buton700").hidden=false;
+document.getElementById("buton700").style.width="80px";
+document.getElementById("buton700").style.height="40px";
+document.getElementById("buton700").style.backgroundColor="white";
+document.getElementById("buton800").hidden=false;
+document.getElementById("buton800").style.width="80px";
+document.getElementById("buton800").style.height="40px";
+document.getElementById("buton800").style.backgroundColor="white";
+document.getElementById("buton800").style.borderBottomRightRadius="20px";
+document.getElementById("buton800").style.borderTopRightRadius="20px";
+document.getElementById("div34").hidden=true;   
+document.getElementById("div2").style.marginBottom="0px";
+document.getElementById("div5").style.marginBottom="0px";
+document.getElementById("div6").style.marginBottom="0px";
+document.getElementById("div15").style.marginBottom="0px";
+document.getElementById("div16").style.marginBottom="0px";
+document.getElementById("div17").style.marginBottom="0px";
+document.getElementById("div18").style.marginBottom="0px";
+document.getElementById("div19").style.marginBottom="0px";
+document.getElementById("div20").hidden=false;
+document.getElementById("div20").style.width="270px";
+document.getElementById("div20").style.height="40px";
+document.getElementById("div20").style.background="white";
+document.getElementById("div20").style.marginLeft="500px";
+document.getElementById("div20").style.marginBottom="0%";
+document.getElementById("div20").style.paddingLeft="70px";
+document.getElementById("div20").style.paddingTop="1px";
+document.getElementById("div20").style.paddingBottom="4px";
+document.getElementById("div20").style.borderRadius="16px";
+document.getElementById("div20").innerHTML="<h3>SİLİNEN HASTALAR</h3><br><br>Kayıtlı hasta bilgilerine ulaşmak için yukarıdaki butonlara tıklayınız";
+    while(k==a && m==b && n==degisken1){
+        document.getElementById("div2").style.marginTop="400px";
+        document.getElementById("div2").style.marginBottom="0px";
+        document.getElementById("div2").hidden=false;
+        document.getElementById("div2").innerHTML="Hasta Adı: "+a+"<br>Hasta Soyadı: "+b+"<br>Dosya No: "+degisken1+"<br><br><br><br><h7>1 NOLU HASTA SİLİNDİ";
+        document.getElementById("buton2").hidden=true;
+        document.getElementById("buton100").hidden=true;
+    }
+    if(k==a1 && m==b1 && n==c1){
+        
+        document.getElementById("div5").style.marginTop="155px";
+        document.getElementById("div5").style.marginBottom="0px";
+        document.getElementById("div5").hidden=false;
+        document.getElementById("div5").innerHTML="Hasta Adı: "+a1+"<br>Hasta Soyadı: "+b1+"<br>Dosya No: "+c1+"<br><br><br><br><h7>2 NOLU HASTA SİLİNDİ";
+        document.getElementById("buton2").hidden=true;
+
+    }
+    if(k==a2 && m==b2 && n==c2){
+        document.getElementById("div6").style.marginTop="155px";
+        document.getElementById("div6").style.marginBottom="0px";
+        document.getElementById("div6").hidden=false;
+        document.getElementById("div6").innerHTML="Hasta Adı: "+a2+"<br>Hasta Soyadı: "+b2+"<br>Dosya No: "+c2+"<br><br><br><br><h7>3 NOLU HASTA SİLİNDİ";
+        document.getElementById("buton2").hidden=true;
+    }
+ 
+    if(k==a3 && m==b3 && n==c3){
+        document.getElementById("div15").style.marginTop="155px";
+        document.getElementById("div15").style.marginBottom="0px";
+        document.getElementById("div15").hidden=false;
+        document.getElementById("div15").innerHTML="Hasta Adı: "+a3+"<br>Hasta Soyadı: "+b3+"<br>Dosya No: "+c3+"<br><br><br><br><h7>4 NOLU HASTA SİLİNDİ";
+        document.getElementById("buton2").hidden=true;
+
+    }
+
+    if(k== a4 && m==b4 && n==c4){
+        document.getElementById("div16").style.marginTop="155px";
+        document.getElementById("div16").style.marginBottom="0px";
+        document.getElementById("div16").hidden=false;
+        document.getElementById("div16").innerHTML="Hasta Adı: "+a4+"<br>Hasta Soyadı: "+b4+"<br>Dosya No: "+c4+"<br><br><br><br><h7>5 NOLU HASTA SİLİNDİ";
+        document.getElementById("buton2").hidden=true;
+    }
+  
+    if(k==a5 && m==b5 && n==c5){
+        document.getElementById("div17").style.marginTop="155px";
+        document.getElementById("div17").style.marginBottom="0px";
+        document.getElementById("div17").hidden=false;
+        document.getElementById("div17").innerHTML="Hasta Adı: "+a5+"<br>Hasta Soyadı: "+b5+"<br>Dosya No: "+c5+"<br><br><br><br><h7>6 NOLU HASTA SİLİNDİ";
+        document.getElementById("buton2").hidden=true;
+    }
+    
+    if(k==a6 && m==b6 && n==c6){
+        document.getElementById("div18").style.marginTop="155px";
+        document.getElementById("div18").style.marginBottom="0px";
+        document.getElementById("div18").hidden=false;
+        document.getElementById("div18").innerHTML="Hasta Adı: "+a6+"<br>Hasta Soyadı: "+b6+"<br>Dosya No: "+c6+"<br><br><br><br><h7>7 NOLU HASTA SİLİNDİ";
+        document.getElementById("buton2").hidden=true;
+    }
+    
+    if(k==a7 && m==b7 && n==c7){
+        document.getElementById("div19").style.marginTop="155px";
+        document.getElementById("div19").style.marginBottom="0px";
+        document.getElementById("div19").hidden=false;
+        document.getElementById("div19").innerHTML="Hasta Adı: "+a7+"<br>Hasta Soyadı: "+b7+"<br>Dosya No: "+c7+"<br><br><br><br><h7>8 NOLU HASTA SİLİNDİ";
+        document.getElementById("buton2").hidden=true;
+    } 
+}
+
+
+function bilgi1(){
+    var p=window.prompt("Lütfen hasta ismini giriniz: ")
+    var t=window.prompt("Lütfen hasta soyismini giriniz")
+    if(p==a && t==b){
+        if(k==a && m==b && n==degisken1){
+            window.alert("kullanıcı bulunamadı");
+        }
+        else{
+            window.open("ders19.html","_blank");
+        }
+    }
+    else{
+        window.alert("Tanımlı hasta bulunamadı");
+    }
+}
+function bilgi2(){
+    var p2=window.prompt("Lütfen hasta ismini giriniz: ")
+    var t2=window.prompt("Lütfen hasta soyismini giriniz")
+    if(p2==a1 && t2==b1){
+        if(k==a1 && m==b1 && n==c1){
+            window.alert("kullanıcı bulunamadı");
+    }
+    else{
+        window.open("ders19.html","_blank");
+    }
+}
+else{
+    window.alert("Tanımlı hasta bulunamadı");
+}
+}
+function bilgi3(){
+    var p3=window.prompt("Lütfen hasta ismini giriniz: ")
+    var t3=window.prompt("Lütfen hasta soyismini giriniz")
+    if(p3==a2 && t3==b2){
+        if(k==a2 && m==b2 && n==c2){
+            window.alert("kullanıcı bulunamadı");
+    }
+    else{
+        window.open("ders19.html","_blank");
+    }
+    }
+    else{
+        window.alert("Tanımlı hasta bulunamadı");
+    }
+}
+function bilgi4(){
+    var p4=window.prompt("Lütfen hasta ismini giriniz: ")
+    var t4=window.prompt("Lütfen hasta soyismini giriniz")
+    if(p4==a3 && t4==b3){
+        if(k==a3 && m==b3 && n==c3){
+            window.alert("kullanıcı bulunamadı");
+    }
+    else{
+        window.open("ders19.html","_blank");
+    }
+    }
+    else{
+        window.alert("Tanımlı hasta bulunamadı");
+    }
+}
+function bilgi5(){
+    var p5=window.prompt("Lütfen hasta ismini giriniz: ")
+    var t5=window.prompt("Lütfen hasta soyismini giriniz")
+    if(p5==a4 && t5==b4){
+        if(k==a4 && m==b4 && n==c4){
+            window.alert("kullanıcı bulunamadı");
+    }
+    else{
+        window.open("ders19.html","_blank");
+    }
+    }
+    else{
+        window.alert("Tanımlı hasta bulunamadı");
+    }
+}
+function bilgi6(){
+    var p6=window.prompt("Lütfen hasta ismini giriniz: ")
+    var t6=window.prompt("Lütfen hasta soyismini giriniz")
+    if(p6==a5 && t6==b5){
+        if(k==a5 && m==b5 && n==c5){
+            window.alert("kullanıcı bulunamadı");
+    }
+    else{
+        window.open("ders19.html","_blank");
+    }
+    }
+    else{
+        window.alert("Tanımlı hasta bulunamadı");
+    }
+}
+function bilgi7(){
+    var p7=window.prompt("Lütfen hasta ismini giriniz: ")
+    var t7=window.prompt("Lütfen hasta soyismini giriniz")
+    if(p7==a6 && t7==b6){
+        if(k==a6 && m==b6 && n==c6){
+            window.alert("kullanıcı bulunamadı");
+    }
+    else{
+        window.open("ders19.html","_blank");
+    }
+    }
+    else{
+        window.alert("Tanımlı hasta bulunamadı");
+    }
+}
+function bilgi8(){
+    var p8=window.prompt("Lütfen hasta ismini giriniz: ")
+    var t8=window.prompt("Lütfen hasta soyismini giriniz")
+    if(p8==a7 && t8==b7){
+        if(k==a7 && m==b7 && n==c7){
+            window.alert("kullanıcı bulunamadı");
+    }
+    else{
+        window.open("ders19.html","_blank");
+    }
+    }
+    else{
+        window.alert("Tanımlı hasta bulunamadı");
+    }
+}
+
+function aramayap(){
+    document.getElementById("div34").hidden=false;
+    document.getElementById("div34").style.width="200px";
+    document.getElementById("div34").style.height="170px";
+    document.getElementById("div34").backgroundColor="yellow";
+    document.getElementById("div34").style.marginLeft="1100px";  
+    document.getElementById("div34").style.marginTop="1px"; 
+    document.getElementById("div34").style.borderRadius="20px"; 
+    var giris1=prompt("ARADIĞINIZ HASTANIN İSMİ: ")
+    var giris2=prompt("ARADIĞINIZ HASTANIN SOYİSMİ: ")
+    var giris3=prompt("ARADIĞINIZ HASTANIN KİMLİK NUMARASI: ")
+    var giris4=prompt("ARADIĞINIZ RAPORUN LABORANT İSMİ: ")
+    var giris5=prompt("ARADIĞINIZ RAPORUN LABORANT SOYİSMİ: ")
+    if(giris1==a && giris2==b && giris4=="Hüseyin" && giris5=="Karaçam"){
+        document.getElementById("div34").innerHTML="Aradığınız rapora ulaşmak için lütfen sol taraftaki Hasta 1 butonuna tıklayınız";
+    }
+    if(giris1==a1 && giris2==b1 && giris4=="Hüseyin" && giris5=="Karaçam"){
+        document.getElementById("div34").innerHTML="Aradığınız rapora ulaşmak için lütfen sol taraftaki Hasta 2 butonuna tıklayınız";
+    }
+    if(giris1==a2 && giris2==b2 && giris4=="Hüseyin" && giris5=="Karaçam"){
+        document.getElementById("div34").innerHTML="Aradığınız rapora ulaşmak için lütfen sol taraftaki Hasta 3 butonuna tıklayınız";
+    }
+    if(giris1==a3 && giris2==b3 && giris4=="Hüseyin" && giris5=="Karaçam"){
+        document.getElementById("div34").innerHTML="Aradığınız rapora ulaşmak için lütfen sol taraftaki Hasta 4 butonuna tıklayınız";
+    }
+    if(giris1==a4 && giris2==b4 && giris4=="Mehmet Ali" && giris5=="Güngören"){
+        document.getElementById("div34").innerHTML="Aradığınız rapora ulaşmak için lütfen sol taraftaki Hasta 5 butonuna tıklayınız";
+    }
+    if(giris1==a5 && giris2==b5 && giris4=="Mehmet Ali" && giris5=="Güngören"){
+        document.getElementById("div34").innerHTML="Aradığınız rapora ulaşmak için lütfen sol taraftaki Hasta 6 butonuna tıklayınız";
+    }
+    if(giris1==a6 && giris2==b6 && giris4=="Hikmet" && giris5=="Avcı"){
+        document.getElementById("div34").innerHTML="Aradığınız rapora ulaşmak için lütfen sol taraftaki Hasta 7 butonuna tıklayınız";
+    }
+    if(giris1==a7 && giris2==b7 && giris4=="Hikmet" && giris5=="Avcı"){
+        document.getElementById("div34").innerHTML="Aradığınız rapora ulaşmak için lütfen sol taraftaki Hasta 8 butonuna tıklayınız";
+    }
+
+
+}
+
+    </script>
+</body>
